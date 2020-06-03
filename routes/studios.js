@@ -4,6 +4,6 @@ const studiosCtrl = require('../controllers/studios');
 
 router.get('/', studiosCtrl.index);
 router.post('/', studiosCtrl.create);
-router.get('/:id', moviesCtrl.show);
+router.get('/:id', studiosCtrl.show);
 
 module.exports = router;

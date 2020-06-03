@@ -42,9 +42,9 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', indexRouter);
-app.use('/dancers', dancersRouter);
+app.use('/', dancersRouter);
 app.use('/studios', studiosRouter);
-app.use('/favorites', favoritesRouter);
+app.use('/', favoritesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

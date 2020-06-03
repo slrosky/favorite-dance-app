@@ -10,11 +10,10 @@
 <body>
     <h3>STUDIOS</h3>
     <section>
-        <% studios.forEach(function(s) { %>  
             <div><img src=<%= s.image %>></div>
             <div><%= s.name %></div>
-            <div><a href="/studios/<%= s._id %>">STUDIO DETAILS</a></div>
-        <% }); %>
+            <div><%= s.location %></div>
+            <div><%= s.description %></div>
 </section> 
 
 </body>

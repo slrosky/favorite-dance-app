@@ -4,7 +4,7 @@ const Class = require('../models/class');
 module.exports = {
   index,
   create,
-  // show,
+  show
 }
 
 function index(req, res) {
@@ -13,17 +13,11 @@ function index(req, res) {
     });
   }
 
-  // function show(req, res) {
-  //   Studio.findById(req.params.id)
-  //   .populate('classes').exec(function(err, studio) {
-  //     Class.find({_id: {$nin: studio.classes}})
-  //     .exec(function(err, classes) {
-  //       res.render('studios/show', {
-  //         title: 'Studio Details', studio, classes
-  //       });
-  //     });
-  //   });
-  // }
+  function show(req, res) {
+    Studio.findById(req.params.id, function(err, studio) {
+        res.render('studios/show', {title: 'Studio Details', studio});
+      });
+  }
 
   function create(req, res) {
     const studio = new Studio(req.body);
