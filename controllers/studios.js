@@ -1,5 +1,4 @@
 const Studio = require('../models/studio');
-const Class = require('../models/class');
 
 module.exports = {
   index,
@@ -15,7 +14,7 @@ function index(req, res) {
 
   function show(req, res) {
     Studio.findById(req.params.id, function(err, studio) {
-        res.render('studios/show', {title: 'Studio Details', studio});
+        res.render('studios/show', { title: 'Studio Details', studio });
       });
   }
 

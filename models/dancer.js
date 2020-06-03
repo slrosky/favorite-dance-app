@@ -12,7 +12,15 @@ const dancerSchema = new mongoose.Schema({
   location: String,
   avatar: String,
   bio: [bioSchema],
-  googleId: String
+  googleId: String,
+  favoriteStudios: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Studio'
+  }],
+  favoriteClasses: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Class'
+  }]
 }, {
   timestamps: true
 });

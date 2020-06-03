@@ -1,4 +1,4 @@
-const Favorite = require('../models/favorite');
+const Dancer = require('../models/dancer');
 const Studio = require('../models/studio');
 const Class = require('../models/class');
 
@@ -7,7 +7,7 @@ module.exports = {
 }
 
 function index(req, res) {
-    Favorite.find({}, function(err, studios) {
-      res.render('favorites/index', { title: 'My Favorites', favorites });
+    Dancer.find({}, function(err, favorites) {
+      res.render('favorites', { title: 'My Favorites', favorites });
     });
   }

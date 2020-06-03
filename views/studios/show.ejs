@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Document</title>
-</head>
-<body>
+<%- include('../partials/header') %>
+
     <h3>STUDIOS</h3>
     <section>
-            <div><img src=<%= s.image %>></div>
-            <div><%= s.name %></div>
-            <div><%= s.location %></div>
-            <div><%= s.description %></div>
-</section> 
+        <div><img src=<%= studio.image %>></div>
+        <div><%= studio.name %></div>
+    </section>
+    
+    <section>
+        <form id="add-studio-to-favorites" action="/studios/<%= studio._id%>/favorites" method="POST">
+            <button type="submit" name="add-favorite-studio" value="${studio._id}" class="btn fave"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave"></button>
+          </form>
+        <div><%= studio.location %></div>
+        <div><%= studio.description %></div>
+    </section> 
+    <div><a href="/classes/<%= studio._id %>">See all <%= studio.name %>'s Classes</a></div>
 
-</body>
-</html>
+
+<%- include('../partials/footer') %>

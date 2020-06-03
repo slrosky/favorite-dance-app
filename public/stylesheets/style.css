@@ -106,7 +106,12 @@ div img {
 max-width: 200px;
 }
 
-section {
+/* section {
   grid-template-columns: 1fr 1fr;
   display: grid;
+} */
+
+.btn {
+  border: none;
+  background-color: none;
 }
