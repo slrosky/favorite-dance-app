@@ -1,8 +1,112 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Helvetica, Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  grid-template-columns: 1fr;
 }
 
-a {
-  color: #00B7FF;
+.landing {
+  background-image: url(https://i.imgur.com/rPyFxGn.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.studiosAll {
+  background-image: url(https://i.imgur.com/zRT7mJj.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+#homepage a {
+  background: #BDBDBD;
+  color: white;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  grid-template-columns: 6fr;
+}
+
+#favorites {
+  background: Black;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  grid-template-columns: 6fr;
+  align-content: space-between;
+}
+
+#favorites a{
+  color: white;
+}
+
+#login a {
+  background: #585858;
+  color: white;
+  display: grid;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  float: right;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3, .main-browse {
+  background: rgb(0, 0, 0, 0.8);
+  color: white;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loud {
+  background: #FCD10D;
+}
+
+.main-browse a {
+  color: white;
+}
+
+.fave {
+max-width: 20px;
+display: inline-flex;
+}
+
+div img {
+max-width: 200px;
+}
+
+section {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
 }

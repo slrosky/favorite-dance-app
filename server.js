@@ -8,7 +8,10 @@ var passport = require('passport');
 const methodOverride = require('method-override');
 
 var indexRouter = require('./routes/index');
+var studiosRouter = require('./routes/studios');
 var dancersRouter = require('./routes/dancers');
+var favoritesRouter = require('./routes/favorites');
+const Studio = require('./models/studio');
 
 require('dotenv').config();
 require('./config/database')
@@ -40,6 +43,8 @@ app.use(function (req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/dancers', dancersRouter);
+app.use('/studios', studiosRouter);
+app.use('/favorites', favoritesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -56,5 +61,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 module.exports = app;

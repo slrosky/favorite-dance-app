@@ -7,15 +7,20 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <title><%= title %></title>
 </head>
-<body>
-    <a href="/">Homepage</a>
-    <div>
-        <a href ="/favorites">Favorites</a>
+<body class="landing">
+    <nav>
+    <div id="homepage">
+        <a href="/">Homepage</a>
     </div>
-    <div>
+    <div id="favorites">
+        <img src="https://i.imgur.com/h6EHJ1n.png" class="fave">
+        <a href="/favorites">Favorites</a>
+    </div>
+    <div id="login" id="logout">
         <% if (user) { %>
-            <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+            <a href="/logout">Log Out</a>
           <% } else { %>
-            <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+            <a href="/auth/google">Login with Google</a>
           <% } %>
     </div>
+</nav>
