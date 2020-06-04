@@ -1,3 +1,39 @@
 <%- include('partials/header') %>
-
+<form id="new-studio" action="/studios" method="POST">
+    <label>Studio Name:</label>
+    <input type="text" name="name">
+    <label>Location:</label>
+    <input type="text" name="location">
+    <label>Image:</label>
+    <input type="text" name="image">
+    <input type="submit" value="Add Studio">
+</form>
+<form id="new-class" action="/classes" method="POST">
+    <label>Class Title:</label>
+    <input type="text" name="title">
+    <label>Day:</label>
+    <input type="text" name="day">
+    <label>Time:</label>
+    <input type="text" name="time">
+    <label>Duration:</label>
+    <select name="duration">
+        <option value="30 minutes">30 m</option>
+        <option value="45 minutes">45 m</option>
+        <option value="60 minutes">1 h</option>
+    <label>Dance Style:</label>
+    <select name="style">
+        <option value="Balboa">Balboa</option>
+        <option value="Lindy Hop">Lindy Hop</option>
+        <option value="Collegiate Shag">Collegiate Shag</option>
+        <option value="Solo Jazz">Solo Jazz</option>
+    </select>
+    <label>Level:</label>
+    <select name="level">
+        <option value="beginner">Beg</option>
+        <option value="intermediate">Int</option>
+        <option value="advanced">Adv</option>
+        <option value="all levels">All</option>
+    </select>
+    <input type="submit" value="Add Class">
+</form>
 <%- include('partials/footer') %>
