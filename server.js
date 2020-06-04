@@ -11,8 +11,10 @@ var indexRouter = require('./routes/index');
 var studiosRouter = require('./routes/studios');
 var dancersRouter = require('./routes/dancers');
 var favoritesRouter = require('./routes/favorites');
+var classesRouter = require('./routes/classes');
+
 const Studio = require('./models/studio');
-const Class = require('../models/class');
+// const Class = require('../models/class');
 
 require('dotenv').config();
 require('./config/database')
@@ -44,6 +46,7 @@ app.use(function (req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/', dancersRouter);
+app.use('/', classesRouter);
 app.use('/studios', studiosRouter);
 app.use('/', favoritesRouter);
 

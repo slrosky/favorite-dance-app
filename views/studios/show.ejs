@@ -1,14 +1,15 @@
 <%- include('../partials/header') %>
 
-    <h3><%= studio.name.toUppercase %></h3>
+    <h3><%= studio.name %></h3>
     <section>
         <div><img src=<%= studio.image %>></div>
         <div><%= studio.name %></div>
     </section>
     
     <section>
-        <form id="add-favorite-studio" action="/studios/<%= studio._id%>/favorites" method="POST">
-            <button type="submit" name="add-favorite-studio" value="${studio._id}" class="btn fave"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave"></button>
+        <form id="add-favorite" action="/favorites/studio/<%= studio._id%>" method="POST">
+            <input type="hidden" name="favoriteStudio" value="${studio._id}" class="btn fave">
+            <button type="submit"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave"></button>
           </form>
         <div><%= studio.location %></div>
         <div><%= studio.description %></div>

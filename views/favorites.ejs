@@ -3,19 +3,15 @@
 <section>
     <h4>Favorite Studios</h4>
         <div>
-        <% if (dancers.favoriteStudios.length) { %>
+        <% if (user._id.favoriteStudios.length) { %>
             <%= studio.name %>
-            <% }); %>
-        <% } else { %>
-        <p>No Favorite Studios Yet<p>
-    <% } %></div>
+            <% }; %>
+        </div>
     <h4>Favorite Classes</h4>
         <div>
-            <% if (dancers.favoriteClasses.length) { %>
+            <% if (user._id.favoriteClasses.length) { %>
             <%= class.name %> || <%= class.day %>, <%= class.time %>
-        <% }); %>
-    <% } else { %>
-    <p>No Favorite Classes Yet<p>
-    <% } %></div>
+        <% }; %>
+        </div>
 </section>
 <%- include('partials/footer') %>

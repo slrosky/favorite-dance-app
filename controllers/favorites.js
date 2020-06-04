@@ -3,25 +3,14 @@ const Studio = require('../models/studio');
 // const Class = require('../models/class');
 
 module.exports = {
-  index,
-  addToStudioFavorites,
-  // addToClassFavorites
+  index
 }
 
 function index(req, res) {
-    Dancer.find({}, function(err, favorites) {
-      res.render('favorites', { title: 'My Favorites', favorites });
-    });
-  }
-
-  function addToStudioFavorites(req, res) {
-    Studio.findById(req.params.id, function(err, studio) {
-      studio.favoriteStudios.push(req.body.studioId);
-      studio.save(function(err) {
-        res.redirect(`/studios/${studio._id}`);
-      });
-    });
-  }
+  Dancer.findById(req.user._id).populate('favoriteStudios favoriteClasses').exec(function(err, currentUser) {
+    res.render('favorites', { title: 'My Favorites', user: currentUser });
+  })
+}
 
   // function addToClassFavorites(req, res) {
   //   Class.findById(req.params.id, function(err, classes) {
