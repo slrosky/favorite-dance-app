@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-    <h3>CLASSES</h3>
+<h3>CLASSES</h3>
     <section>
         <% classes.forEach(function(c) { %>  
             <div><%= c.title %></div>
@@ -10,6 +10,6 @@
             <div><%= c.title %></div>
             <div><a href="/classes/<%= c._id %>">CLASS DETAILS</a></div>
         <% }); %>
-</section> 
-<br>
-<%- include('../partials/footer') %>
+    </section> 
+
+    <%- include('../partials/footer') %>

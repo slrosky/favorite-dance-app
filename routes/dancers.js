@@ -4,6 +4,7 @@ var dancersCtrl = require('../controllers/dancers');
 
 router.get('/dancers', dancersCtrl.index);
 router.post('/favorites/studio/:id', dancersCtrl.updateUserStudioFavorites)
+router.post('/favorites/class/:id', dancersCtrl.updateUserClassFavorites)
 
 
 module.exports = router;

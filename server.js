@@ -5,16 +5,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
 var passport = require('passport');
-const methodOverride = require('method-override');
+var methodOverride = require('method-override');
 
 var indexRouter = require('./routes/index');
 var studiosRouter = require('./routes/studios');
 var dancersRouter = require('./routes/dancers');
 var favoritesRouter = require('./routes/favorites');
-var classesRouter = require('./routes/classes');
-
 const Studio = require('./models/studio');
-// const Class = require('../models/class');
+var classesRouter = require('./routes/classes');
+const Class = require('./models/class');
 
 require('dotenv').config();
 require('./config/database')
@@ -46,8 +45,8 @@ app.use(function (req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/', dancersRouter);
-app.use('/', classesRouter);
 app.use('/studios', studiosRouter);
+app.use('/classes', classesRouter);
 app.use('/', favoritesRouter);
 
 // catch 404 and forward to error handler

@@ -3,15 +3,27 @@
 <section>
     <h4>Favorite Studios</h4>
         <div>
-        <% if (user._id.favoriteStudios.length) { %>
-            <%= studio.name %>
-            <% }; %>
+            <% if (user.favoriteStudios.length) { %>
+                <% user.favoriteStudios.forEach(function(s) { %>  
+                    <form action="/favorites/studio/<%= s._id%>" method="DELETE">
+                        <input type="hidden" name="favoriteStudios" value="${s._id}" class="btn remove">
+                        <button type="submit">X</button>
+                      </form>
+                <%= s.name %><br>
+                <% }); %>
+            <% } else  { %>
+                <p>No Favorite Studios</p>
+            <% } %>
         </div>
-    <h4>Favorite Classes</h4>
+        <h4>Favorite Classes</h4>
         <div>
-            <% if (user._id.favoriteClasses.length) { %>
-            <%= class.name %> || <%= class.day %>, <%= class.time %>
-        <% }; %>
+            <% if (user.favoriteClasses.length) { %>
+                <% user.favoriteClasses.forEach(function(c) { %>  
+                    <%= c.title %> || <%= c.day %>, <%= c.time %><br>
+                <% }); %>
+            <% } else  { %>x
+                <p>No Favorite Classes</p>
+            <% } %>        
         </div>
 </section>
 <%- include('partials/footer') %>

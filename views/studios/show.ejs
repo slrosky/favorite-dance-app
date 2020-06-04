@@ -8,13 +8,13 @@
     
     <section>
         <form id="add-favorite" action="/favorites/studio/<%= studio._id%>" method="POST">
-            <input type="hidden" name="favoriteStudio" value="${studio._id}" class="btn fave">
+            <input type="hidden" name="favoriteStudios" value="${studio._id}" class="btn fave">
             <button type="submit"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave"></button>
           </form>
         <div><%= studio.location %></div>
         <div><%= studio.description %></div>
     </section> 
-    <div><a href="/classes/<%= studio._id %>">See all <%= studio.name %>'s Classes</a></div>
+    <div>See all <%= studio.name %>'s Classes</div>
 
 
 <%- include('../partials/footer') %>

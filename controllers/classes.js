@@ -7,8 +7,8 @@ module.exports = {
 }
 
 function index(req, res) {
-    Class.find({}, function(err, danceClass) {
-      res.render('classes/index', { title: 'All Classes', danceClass });
+    Class.find({}, function(err, classes) {
+      res.render('classes/index', { title: 'All Classes', classes });
     });
   }
 

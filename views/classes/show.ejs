@@ -1,3 +1,16 @@
 <%- include('../partials/header') %>
+<h3><%= danceClass.title %></h3>
+    <section>
+        <div><%= danceClass.name %></div>    
+        <form id="add-favorite" action="/favorites/class/<%= danceClass._id%>" method="POST">
+            <input type="hidden" name="favoriteClasses" value="${class._id}" class="btn fave">
+            <button type="submit"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave"></button>
+        </form>
+        <div><%= danceClass.day %></div>
+        <div><%= danceClass.time %></div>
+        <div><%= danceClass.style %></div>
+        <div><%= danceClass.level %></div>
+        <div><%= danceClass.description %></div>
+    </section> 
 
 <%- include('../partials/footer') %>
