@@ -3,7 +3,7 @@ const router = express.Router();
 const studiosCtrl = require('../controllers/studios');
 
 router.get('/', studiosCtrl.index);
-router.post('/', studiosCtrl.create);
-router.get('/:id', studiosCtrl.show);
+router.get('/', studiosCtrl.show);
+router.get('/', studiosCtrl.create);
 
 module.exports = router;

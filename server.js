@@ -12,6 +12,7 @@ var studiosRouter = require('./routes/studios');
 var dancersRouter = require('./routes/dancers');
 var favoritesRouter = require('./routes/favorites');
 const Studio = require('./models/studio');
+const Class = require('../models/class');
 
 require('dotenv').config();
 require('./config/database')
