@@ -2,9 +2,14 @@ var express = require('express');
 var router = express.Router();
 var dancersCtrl = require('../controllers/dancers');
 
-router.get('/dancers', dancersCtrl.index);
-router.post('/favorites/studio/:id', dancersCtrl.updateUserStudioFavorites)
-router.post('/favorites/class/:id', dancersCtrl.updateUserClassFavorites)
 
+router.get('/dancers', dancersCtrl.index);
+router.post('/favorites/studio/:id', isLoggedIn, dancersCtrl.updateUserStudioFavorites)
+router.post('/favorites/class/:id', isLoggedIn, dancersCtrl.updateUserClassFavorites)
+
+function isLoggedIn(req, res, next) {
+    if ( req.isAuthenticated() ) return next();
+    res.redirect('/auth/google');
+  }
 
 module.exports = router;

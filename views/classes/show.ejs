@@ -4,7 +4,9 @@
         <div><%= danceClass.name %></div>    
         <form id="add-favorite" action="/favorites/class/<%= danceClass._id%>" method="POST">
             <input type="hidden" name="favoriteClasses" value="${class._id}" class="btn fave">
-            <button type="submit"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave"></button>
+            <% if(!user.favoriteCLasses.includes(danceClass._id)) {%>
+                <button type="submit"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave" disabled></button>
+            <% } %>        
         </form>
         <div><%= danceClass.day %></div>
         <div><%= danceClass.time %></div>

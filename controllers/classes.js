@@ -13,6 +13,7 @@ function index(req, res) {
   }
 
   function show(req, res) {
+      console.log('hitting')
     Class.findById(req.params.id, function(err, danceClass) {
         res.render('classes/show', { title: 'Class Details', danceClass });
       });

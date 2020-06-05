@@ -14,7 +14,7 @@ function index(req, res) {
 
   function show(req, res) {
     Studio.findById(req.params.id, function(err, studio) {
-        res.render('studios/show', { title: 'Studio Details', studio });
+        res.render('studios/show', { title: 'Studio Details', studio, user: req.user });
       });
   }
 
@@ -26,5 +26,3 @@ function index(req, res) {
     });
   }
   
-  // Studio.create(req.body, function(err, newStudio) {
-  //   });

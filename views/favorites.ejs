@@ -5,10 +5,10 @@
         <div>
             <% if (user.favoriteStudios.length) { %>
                 <% user.favoriteStudios.forEach(function(s) { %>  
-                    <form action="/favorites/studio/<%= s._id%>" method="DELETE">
+                    <form action="/favorites/studio/<%= s._id%>?_method=DELETE" class="delete-form" method="POST">
                         <input type="hidden" name="favoriteStudios" value="${s._id}" class="btn remove">
                         <button type="submit">X</button>
-                      </form>
+                    </form>
                 <%= s.name %><br>
                 <% }); %>
             <% } else  { %>
@@ -19,9 +19,13 @@
         <div>
             <% if (user.favoriteClasses.length) { %>
                 <% user.favoriteClasses.forEach(function(c) { %>  
+                    <form action="/favorites/class/<%= c._id%>?_method=DELETE" class="delete-form" method="POST">
+                        <input type="hidden" name="favoriteClasses" value="${c._id}" class="btn remove">
+                        <button type="submit">X</button>
+                    </form>
                     <%= c.title %> || <%= c.day %>, <%= c.time %><br>
                 <% }); %>
-            <% } else  { %>x
+            <% } else  { %>
                 <p>No Favorite Classes</p>
             <% } %>        
         </div>

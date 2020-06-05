@@ -19,7 +19,7 @@ function index(req, res, next) {
 }
 
 function show(req, res) {
-  req.params.id
+  Dancer.findById(req.params.id)
   .populate('favoriteStudios').exec(function(err, studio) {
     Studio.find({_id: {$nin: studio.favoriteStudios}})
     .exec(function(err, favoriteStudios) {
@@ -41,26 +41,22 @@ function show(req, res) {
 
 function updateUserStudioFavorites(req, res) {
   Studio.findById(req.params.id, function(err, studio) {
-    req.user._id (function(err, dancer) {
-      if (dancer.favoriteStudios.includes(req.params.id)) {
-        console.log('this studio is already favorited')
-      } else {
-        console.log('this studio is brand new to favorites')
-      };
+    Dancer.findById(req.user._id, function(err, dancer) {
       dancer.favoriteStudios.push(studio);
       dancer.save((err) => {
-        res.redirect(`/studios/${req.params.id}`);
+        res.redirect('/favorites');
       });
     });
   });
 }
 
 function updateUserClassFavorites(req, res) {
+  console.log('hitting');
   Class.findById(req.params.id, function(err, danceclass) {
-    req.user._id (function(err, dancer) {
+    Dancer.findById(req.user._id, function(err, dancer) {
       dancer.favoriteClasses.push(danceclass);
       dancer.save((err) => {
-        res.redirect(`/classes/${req.params.id}`);
+        res.redirect('/favorites');
       });
     });
   });
