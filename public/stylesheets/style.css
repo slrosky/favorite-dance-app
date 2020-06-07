@@ -115,3 +115,7 @@ max-width: 200px;
   border: none;
   background-color: none;
 }
+
+form {
+  display: inline;
+}

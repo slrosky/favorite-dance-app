@@ -8,10 +8,12 @@
     
     <section>
         <form id="add-favorite" action="/favorites/studio/<%= studio._id%>" method="POST">
-            <input type="hidden" name="favoriteStudios" value="${studio._id}" class="btn fave">
-            <% if(!user.favoriteStudios.includes(studio._id)) {%>
+            <input type="hidden" name="favoriteStudios" value="<% studio._id %>" class="btn fave">
+            <% if (user) { %>
+                <% if(!user.favoriteStudios.includes(studio._id)) {%>
                 <button type="submit"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave" disabled></button>
             <% } %>
+                <% } else {} %>
           </form>
         <div><%= studio.location %></div>
         <div><%= studio.description %></div>

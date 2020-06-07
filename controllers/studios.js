@@ -14,7 +14,7 @@ function index(req, res) {
 
   function show(req, res) {
     Studio.findById(req.params.id, function(err, studio) {
-        res.render('studios/show', { title: 'Studio Details', studio, user: req.user });
+        res.render('studios/show', { title: 'Studio Details', studio});
       });
   }
 

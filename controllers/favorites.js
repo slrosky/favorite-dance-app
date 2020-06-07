@@ -27,7 +27,8 @@ function deleteFavoriteStudio (req, res) {
 
 function deleteFavoriteClass (req, res) {
   Class.findById(req.params.id, function(err, danceClass) {
-      req.user.favoriteClass.remove(danceClass);
+    console.log(danceClass)
+      req.user.favoriteClasses.remove(danceClass);
       req.user.save((err) => {
         res.redirect('/favorites');
       });

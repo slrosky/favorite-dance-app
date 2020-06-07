@@ -22,3 +22,9 @@ module.exports.classes = [
 {title: "Advanced Collegiate Shag", day: "Wednesday", time: "7:00 PM", duration: "45 minutes", level: "Advanced", style: "Collegiate Shag", teacher: "Scooby Doo"},
 {title: "Solo Jazz - All Levels", day: "Thursday", time: "9:00 PM", duration: "45 minutes", level: "All", style: "Solo Jazz", teacher: "The Queen of Swing"},
 ]
+
+module.exports.teachers = [
+{Name: "John Doe", bio: "John Doe has been dancing since he was 10. His expertise is rooted in training from the legends themselves. His teaching methodology is based on body awareness and partnership trust."},
+{Name: "Jane Doe", bio: "Jane Doe has been dancing since she was 10. Her expertise is rooted in training from the legends themselves. Her teaching methodology is based on body awareness and partnership trust."},
+{Name: "Scooby Doo", bio: "Who would've thought, one of the most kanines in the world is also a cool swing cat! He cares about making every student feel welcome and always provides Scooby snacks."}
+]

@@ -5,8 +5,8 @@ const Class = require('../models/class');
 module.exports = {
   index,
   show,
-  updateUserStudioFavorites,
-  updateUserClassFavorites
+  addFavoriteStudio,
+  addFavoriteClass
 };
 
 function index(req, res, next) {
@@ -39,7 +39,7 @@ function show(req, res) {
   });
 }
 
-function updateUserStudioFavorites(req, res) {
+function addFavoriteStudio(req, res) {
   Studio.findById(req.params.id, function(err, studio) {
     Dancer.findById(req.user._id, function(err, dancer) {
       dancer.favoriteStudios.push(studio);
@@ -50,7 +50,7 @@ function updateUserStudioFavorites(req, res) {
   });
 }
 
-function updateUserClassFavorites(req, res) {
+function addFavoriteClass(req, res) {
   console.log('hitting');
   Class.findById(req.params.id, function(err, danceclass) {
     Dancer.findById(req.user._id, function(err, dancer) {
