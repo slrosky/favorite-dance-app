@@ -9,8 +9,6 @@ _Welcome to "Favorite Dance App". Here, as a user, you can log in to build a lis
 ![App Landing Logged In](https://i.imgur.com/pkiyLgB.png)
 #### Favorites Page
 ![Favorites Page](https://i.imgur.com/35XeI1k.png)
-#### Favorites Page Content Close Up
-![Favorites Page](https://i.imgur.com/E7lIofW.png)
 #### Favorites Page Bio
 ![Favorites Page](https://i.imgur.com/fKxpBrU.png)
 #### Favorites Page Edit Bio Applied
