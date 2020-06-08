@@ -50,7 +50,7 @@ Welcome to "Favorite Dance App". Here, as a user, you can log in to build a list
 - [ ] Add teacher link and object
 - [ ] Add "favorite" teacher feature
 - [ ] Add restricted admin account capabilities with full CRUD 
-- Refactor code to improve readability and flow.
+- [ ] Refactor code to improve readability and flow.
 - [ ] Improve styling across all pages
 - [ ] Add "back" link  to every page for easier navigation
 - [ ] Link all studios, classes and teachers on their "referenced pages" (e.g. then viewing the list of classes at a studio on the studio's details page, a user should be able to click on the name of the class and be redirected to that  class's details page)
