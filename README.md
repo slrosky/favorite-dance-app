@@ -6,31 +6,31 @@ Welcome to "Favorite Dance App". Here, as a user, you can log in to build a list
 
 ## Views of Favorite Dance App
 #### Landing Page - No User Logged In
-![App Landing Page](https://i.imgur.com/CBrauvF.png | width=200)
+![App Landing Page](https://i.imgur.com/CBrauvF.png)
 #### Landing Page - User Logged In
-![App Landing Logged In](https://i.imgur.com/pkiyLgB.png | width=200)
+![App Landing Logged In](https://i.imgur.com/pkiyLgB.png)
 #### Favorites Page
-![Favorites Page](https://i.imgur.com/35XeI1k.png | width=200)
+![Favorites Page](https://i.imgur.com/35XeI1k.png)
 #### Favorites Page Content Close Up
-![Favorites Page](https://i.imgur.com/E7lIofW.png | width=200)
+![Favorites Page](https://i.imgur.com/E7lIofW.png)
 #### Favorites Page Bio
-![Favorites Page](https://i.imgur.com/fKxpBrU.png | width=200)
+![Favorites Page](https://i.imgur.com/fKxpBrU.png)
 #### Favorites Page Edit Bio Applied
-![Favorites Page](https://i.imgur.com/LDUxWjQ.png | width=200)
+![Favorites Page](https://i.imgur.com/LDUxWjQ.png)
 #### All Studios View
-![All Studios Page](https://i.imgur.com/DnRw0mv.png | width=200)
+![All Studios Page](https://i.imgur.com/DnRw0mv.png)
 #### Studio Details View with Favorite Button Enables (User Logged In)
 - Class Show Page with Favorite Button Enables
 - Class Show Page Add Class Drop Down
 - Class Show Page Class Added
-![Class Show Page with Favorite Button Enables](https://i.imgur.com/MJOwsHB.png | width=100)
-![Class Show Page Add Class Drop Down](https://i.imgur.com/QAcpCwT.png | width=100)
-![Class Show Page Class Added](https://i.imgur.com/q8eF70r.png | width=100)
+![Class Show Page with Favorite Button Enables](https://i.imgur.com/MJOwsHB.png)
+![Class Show Page Add Class Drop Down](https://i.imgur.com/QAcpCwT.png)
+![Class Show Page Class Added](https://i.imgur.com/q8eF70r.png)
 
-![Class Show Page with Favorite Button Disabled](https://i.imgur.com/74eweqw.png | width=200)
+![Class Show Page with Favorite Button Disabled](https://i.imgur.com/74eweqw.png)
 
 #### Favorites Page Content Close Up With Favorited Studio
-![Favorites Page Favorite Studio](https://i.imgur.com/VOqbbJ1.png | width=300)
+![Favorites Page Favorite Studio](https://i.imgur.com/VOqbbJ1.png)
 
 ## Technologies Used: 
 - Express
