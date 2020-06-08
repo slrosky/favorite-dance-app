@@ -6,7 +6,8 @@ module.exports = {
   index,
   show,
   addFavoriteStudio,
-  addFavoriteClass
+  addFavoriteClass,
+  update
 };
 
 function index(req, res, next) {
@@ -58,6 +59,16 @@ function addFavoriteClass(req, res) {
       dancer.save((err) => {
         res.redirect('/favorites');
       });
+    });
+  });
+}
+
+function update(req, res) {
+  console.log('this is req.body.content', req.body.content)
+  Dancer.findById(req.params.id, function(err, user) {
+    user.bio = req.body.content;
+    user.save ((err) => {
+    res.redirect('/favorites');
     });
   });
 }
