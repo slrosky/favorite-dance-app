@@ -31,7 +31,7 @@ function(accessToken, refreshToken, profile, cb) {
 
 
 passport.serializeUser(function(dancer, done) {
-    return done(null, dancer._id);
+    return done(null, dancer.id);
 });
 passport.deserializeUser(function(id, done) {
     Dancer.findById(id, function(err, dancer) {

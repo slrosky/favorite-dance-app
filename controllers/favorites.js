@@ -6,7 +6,8 @@ const Class = require('../models/class');
 module.exports = {
   index,
   deleteFavoriteStudio,
-  deleteFavoriteClass
+  deleteFavoriteClass,
+  // addBio
 };
 
 function index(req, res) {
@@ -34,3 +35,10 @@ function deleteFavoriteClass (req, res) {
       });
     });
   };
+
+//   function addBio(req, res) {
+//     req.user.bio.create(req.params.id);
+//     req.user.bio.save((err) => {
+//         res.redirect('/favorites');
+//   });
+// }

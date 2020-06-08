@@ -1,6 +1,21 @@
 <%- include('partials/header') %>
 <h3>FAVORITES</h3>
 <section>
+    <h4>My Little Bio</h4>
+    <% if (user) { %>
+        <% if (user.bio) { %>
+            <form action="/dancers/<%= user._id %>?_method=PUT" method="POST">
+                <input type="text" name="bio" value="<% user.bio %>">
+                <button type="submit" name="addBio">Update My bio</button>
+            </form>
+            <% } else { %>
+            <form action="/dancers/<%= user._id %>" method="POST">
+                <input type="text" name="content" value="What makes you jive">
+                <button type="submit" name="addBio">Add my bio!</button>
+            </form>
+    <% } %>
+    <% } else {} %>
+    <p><%= user.bio %></p>
     <h4>Favorite Studios</h4>
         <div>
             <% if (user.favoriteStudios.length) { %>

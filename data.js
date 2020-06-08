@@ -11,20 +11,21 @@ module.exports.studios = [
 ]
 
 module.exports.classes = [
-{title: "Beginner Lindy Hop", day: "Monday", time: "5:00 PM", duration: "45 minutes", level: "Beginner", style: "Lindy Hop", teacher: "John Doe"},
-{title: "Intermediate Lindy Hop", day: "Monday", time: "6:00 PM", duration: "45 minutes", level: "Intermediate", style: "Lindy Hop", teacher: "Jane Doe"},
-{title: "Advanced Lindy Hop", day: "Monday", time: "7:00 PM", duration: "45 minutes", level: "Advanced", style: "Lindy Hop", teacher: "Scooby Doo"},
-{title: "Beginner Balboa", day: "Tuesday", time: "5:00 PM", duration: "45 minutes", level: "Beginner", style: "Balboa", teacher: "John Doe"},
-{title: "Intermediate Balboa", day: "Tuesday", time: "6:00 PM", duration: "45 minutes", level: "Intermediate", style: "Balboa", teacher: "Jane Doe"},
-{title: "Advanced Balboa", day: "Tuesday", time: "7:00 PM", duration: "45 minutes", level: "Advanced", style: "Balboa", teacher: "Scooby Doo"},
-{title: "Beginner Collegiate Shag", day: "Wednesday", time: "5:00 PM", duration: "45 minutes", level: "Beginner", style: "Collegiate Shag", teacher: "John Doe"},
-{title: "Intermediate Collegiate Shag", day: "Wednesday", time: "6:00 PM", duration: "45 minutes", level: "Intermediate", style: "Collegiate Shag", teacher: "Jane Doe"},
-{title: "Advanced Collegiate Shag", day: "Wednesday", time: "7:00 PM", duration: "45 minutes", level: "Advanced", style: "Collegiate Shag", teacher: "Scooby Doo"},
-{title: "Solo Jazz - All Levels", day: "Thursday", time: "9:00 PM", duration: "45 minutes", level: "All", style: "Solo Jazz", teacher: "The Queen of Swing"},
+{title: "Beginner Lindy Hop", day: "Monday", hour: "5:00", time: "PM", duration: "45", level: "Beginner", style: "Lindy Hop", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Intermediate Lindy Hop", day: "Monday", hour: "6:00", time: "PM", duration: "45", level: "Intermediate", style: "Lindy Hop", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Advanced Lindy Hop", day: "Monday", hour: "7:00", time: "PM", duration: "45", level: "Advanced", style: "Lindy Hop", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Beginner Balboa", day: "Tuesday", hour: "5:00", time: "PM", duration: "45", level: "Beginner", style: "Balboa", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Intermediate Balboa", day: "Tuesday", hour: "6:00", time: "PM", duration: "45", level: "Intermediate", style: "Balboa", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Advanced Balboa", day: "Tuesday", hour: "7:00", time: "PM", duration: "45", level: "Advanced", style: "Balboa", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Beginner Collegiate Shag", day: "Wednesday", hour: "5:00", time: "PM", duration: "45", level: "Beginner", style: "Collegiate Shag", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Intermediate Collegiate Shag", day: "Wednesday", hour: "6:00", time: "PM", duration: "45", level: "Intermediate", style: "Collegiate Shag", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Advanced Collegiate Shag", day: "Wednesday", hour: "7:00", time: "PM", duration: "45", level: "Advanced", style: "Collegiate Shag", image: "https://i.imgur.com/WWX12sQ.jpg"},
+{title: "Solo Jazz - All Levels", day: "Thursday", hour: "9:00", time: "PM", duration: "45", level: "All", style: "Solo Jazz", teacher: "The Queen of Swing", image: "https://i.imgur.com/WWX12sQ.jpg"},
 ]
 
 module.exports.teachers = [
 {Name: "John Doe", bio: "John Doe has been dancing since he was 10. His expertise is rooted in training from the legends themselves. His teaching methodology is based on body awareness and partnership trust."},
 {Name: "Jane Doe", bio: "Jane Doe has been dancing since she was 10. Her expertise is rooted in training from the legends themselves. Her teaching methodology is based on body awareness and partnership trust."},
-{Name: "Scooby Doo", bio: "Who would've thought, one of the most kanines in the world is also a cool swing cat! He cares about making every student feel welcome and always provides Scooby snacks."}
+{Name: "Scooby Doo", bio: "Who would've thought, one of the most kanines in the world is also a cool swing cat! He cares about making every student feel welcome and always provides Scooby snacks."},
+{Name: "The Queen of Swing", bio: "Some consider her the best dancer in the entire world. She's really really cool."}
 ]

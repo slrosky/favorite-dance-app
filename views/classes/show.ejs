@@ -1,19 +1,19 @@
 <%- include('../partials/header') %>
-<h3><%= danceClass.title %></h3>
-    <section>
-        <div><%= danceClass.name %></div>    
+<h3><%= title %></h3>
+<section>
+        <div><%= danceClass.title %></div>    
         <form id="add-favorite" action="/favorites/class/<%= danceClass._id%>" method="POST">
-            <input type="hidden" name="favoriteClasses" value="${class._id}" class="btn fave">
+            <input type="hidden" name="favoriteClasses" value="${danceClass._id}" class="btn fave">
             <% if (user) { %>
                 <% if(!user.favoriteClasses.includes(danceClass._id)) {%>
                 <button type="submit"><img src="https://i.imgur.com/h6EHJ1n.png" class="fave" disabled></button>
             <% } %>        
             <% } else {}%>        
         </form>
+        <div><%= danceClass.image %></div>
         <div><%= danceClass.day %></div>
-        <div><%= danceClass.time %></div>
-        <div><%= danceClass.style %></div>
-        <div><%= danceClass.level %></div>
+        <div><%= danceClass.hour %> <%= danceClass.time %></div>
+        <div>Style: <%= danceClass.style %> || Level: <%= danceClass.level %></div>
         <div><%= danceClass.description %></div>
     </section> 
 

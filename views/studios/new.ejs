@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+<form id="new-studio" action="/studios" method="POST">
+    <label>Studio Name:</label>
+    <input type="text" name="name">
+    <label>Location:</label>
+    <input type="text" name="location">
+    <label>Image:</label>
+    <input type="text" name="image">
+    <input type="submit" value="Add Studio">
+</form>
+<%- include('../partials/footer') %>

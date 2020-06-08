@@ -8,8 +8,8 @@ var passport = require('passport');
 var methodOverride = require('method-override');
 
 var indexRouter = require('./routes/index');
-var studiosRouter = require('./routes/studios');
 var dancersRouter = require('./routes/dancers');
+var studiosRouter = require('./routes/studios');
 var favoritesRouter = require('./routes/favorites');
 const Studio = require('./models/studio');
 var classesRouter = require('./routes/classes');

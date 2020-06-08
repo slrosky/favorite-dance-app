@@ -18,7 +18,17 @@
         <div><%= studio.location %></div>
         <div><%= studio.description %></div>
     </section> 
+    <form id="add-class-to-studio-roster" action="/studios/<%= studio._id%>/classes" method="POST">
+        <select name="danceClassId">
+          <%- classes.map(c => `<option value="${c._id}">${c.title}</option>`) %>
+        </select>
+        <button type="submit">Add to Class List</button>
+      </form>
     <div>See all <%= studio.name %>'s Classes</div>
-
+    <ul>
+        <%- studio.roster.map(c => 
+          `<li>${c.title}</li>`
+        )%>
+      </ul>
 
 <%- include('../partials/footer') %>

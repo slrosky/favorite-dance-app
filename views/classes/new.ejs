@@ -1,0 +1,69 @@
+<%- include('../partials/header') %>
+
+<h3>New Class</h3>
+<form id="new-form" action="/classes" method="POST">
+    <label>Title
+        <input type="text" name="title">
+    </label><br>
+    <label>Image
+        <input type="text" name="image">
+    </label><br>
+    <label>Day
+        <select name="day">
+            <option value="Monday" selected>Mon</option>
+            <option value="Tuesday" selected>Tues</option>
+            <option value="Wednesday" selected>Weds</option>
+            <option value="Thursday" selected>Thurs</option>
+            <option value="Friday" selected>Fri</option>
+            <option value="Saturday" selected>Sat</option>
+            <option value="Sunday" selected>Sun</option>
+        </select>
+    </label><br>
+    <div display="inline">
+        <label>Hour
+            <select name="hour">
+                <option value="1:00" selected>1:00</option>
+                <option value="2:00" selected>2:00</option>
+                <option value="3:00" selected>3:00</option>
+                <option value="4:00" selected>4:00</option>
+                <option value="5:00" selected>5:00</option>
+                <option value="6:00" selected>6:00</option>
+                <option value="7:00" selected>7:00</option>
+                <option value="8:00" selected>8:00</option>
+                <option value="9:00" selected>9:00</option>
+                <option value="10:00" selected>10:00</option>
+                <option value="11:00" selected>11:00</option>
+                <option value="12:00" selected>12:00</option>
+            </select>
+            </label><br>
+        <label>Time
+            <select name="time">
+                <option value="AM" selected>AM</option>
+                <option value="PM" selected>PM</option>
+            </select>
+        </label><br>
+    </div>
+    <label>
+        <input type="Number" name="duration"></input> minutes
+    </label><br>
+    <label>Level
+        <select name="level">
+            <option value="Beginner" selected>Beginner</option>
+            <option value="Intermediate" selected>Intermediate</option>
+            <option value="Advanced" selected>Advanced</option>
+        </select>
+    </label><br>
+    <label>Style
+        <select name="time">
+            <option value="Lindy Hop" selected>Lindy Hop</option>
+            <option value="Collegiate Shag" selected>Collegiate Shag</option>
+            <option value="Balboa" selected>Balboa</option>
+            <option value="Solo Jazz" selected>Solo Jazz</option>
+        </select>
+    </label><br>
+    <label>Description
+        <input type="text" name="description">
+    </label><br>
+    <input type="submit" value="Add Class">
+</form>
+<%- include('../partials/footer') %>

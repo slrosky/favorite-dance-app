@@ -6,7 +6,7 @@ const studioSchema = new Schema({
     image: String,
     location: String,
     description: String,
-    classes: [{
+    roster: [{
         type: Schema.Types.ObjectId,
         ref: 'Class'
     }]

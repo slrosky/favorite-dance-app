@@ -1,14 +1,25 @@
 const Dancer = require('../models/dancer');
 
 module.exports = {
-  create
+  create,
+  update
 };
 
 function create(req, res) {
-    Dancer.findById(req.params.id, function(err, bio) {
-        req.user.bio.create(req.params.id);
-        req.user.save((err) => {
-        res.redirect(`/favorites/${req.params.id}`);
+    console.log('hitting create in bio controller')
+    Dancer.findById(req.params.id, function(err, user) {
+        user.bio = req.body.content;
+        user.save ((err) => {
+        res.redirect('/favorites');
+    });
+  });
+}
+function update(req, res) {
+    console.log('hitting create in bio controller')
+    Dancer.findById(req.params.id, function(err, user) {
+        user.bio = req.body.content;
+        user.save ((err) => {
+        res.redirect('/favorites');
     });
   });
 }

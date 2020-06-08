@@ -1,24 +1,19 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const bioSchema = new mongoose.Schema({
-  text: String
-}, {
-  timestamps: true
-});
-
-const dancerSchema = new mongoose.Schema({
+const dancerSchema = new Schema({
   name: String,
   email: String,
   location: String,
   avatar: String,
-  bio: [bioSchema],
+  bio: String,
   googleId: String,
   favoriteStudios: [{
-    type: mongoose.Schema.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'Studio'
   }],
   favoriteClasses: [{
-    type: mongoose.Schema.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'Class'
   }]
 }, {

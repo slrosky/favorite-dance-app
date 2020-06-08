@@ -1,8 +1,10 @@
 const Class = require('../models/class');
+const Studio = require('../models/studio');
 
 module.exports = {
   index,
   show,
+  new: addClass,
   create
 }
 
@@ -18,11 +20,16 @@ function index(req, res) {
         res.render('classes/show', { title: 'Class Details', danceClass });
       });
   }
-
+  
+  function addClass(req, res) {
+    console.log();
+    res.render('classes/new', { title: 'Add Class' });
+  }
+  
   function create(req, res) {
     const danceClass = new Class(req.body);
     danceClass.save(function(err) {
-      if (err) return res.redirect('/classes');
-      res.redirect(`/classes/${danceClass._id}`);
+      if (err) return res.redirect('/classes/new');
+      res.redirect('/classes');
     });
   }
