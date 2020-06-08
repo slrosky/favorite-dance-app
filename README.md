@@ -5,21 +5,21 @@ Welcome to "Favorite Dance App". Here, as a user, you can log in to build a list
 
 
 ## Views of Favorite Dance App
-Landing Page - No User Logged In
+#### Landing Page - No User Logged In
 ![App Landing Page](https://i.imgur.com/CBrauvF.png | width=200)
-Landing Page - User Logged In
+#### Landing Page - User Logged In
 ![App Landing Logged In](https://i.imgur.com/pkiyLgB.png | width=200)
-Favorites Page
+#### Favorites Page
 ![Favorites Page](https://i.imgur.com/35XeI1k.png | width=200)
-Favorites Page Content Close Up
+#### Favorites Page Content Close Up
 ![Favorites Page](https://i.imgur.com/E7lIofW.png | width=200)
-Favorites Page Bio
+#### Favorites Page Bio
 ![Favorites Page](https://i.imgur.com/fKxpBrU.png | width=200)
-Favorites Page Edit Bio Applied
+#### Favorites Page Edit Bio Applied
 ![Favorites Page](https://i.imgur.com/LDUxWjQ.png | width=200)
-All Studios View
+#### All Studios View
 ![All Studios Page](https://i.imgur.com/DnRw0mv.png | width=200)
-Studio Details View with Favorite Button Enables (User Logged In)
+#### Studio Details View with Favorite Button Enables (User Logged In)
 - Class Show Page with Favorite Button Enables
 - Class Show Page Add Class Drop Down
 - Class Show Page Class Added
@@ -29,7 +29,7 @@ Studio Details View with Favorite Button Enables (User Logged In)
 
 ![Class Show Page with Favorite Button Disabled](https://i.imgur.com/74eweqw.png | width=200)
 
-Favorites Page Content Close Up With Favorited Studio
+#### Favorites Page Content Close Up With Favorited Studio
 ![Favorites Page Favorite Studio](https://i.imgur.com/VOqbbJ1.png | width=300)
 
 ## Technologies Used: 
