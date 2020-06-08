@@ -1,7 +1,5 @@
 # Favorite Dance App
----
----
-Welcome to "Favorite Dance App". Here, as a user, you can log in to build a list of favorite dance studios and classes. "Favorite Dance App" is easy to navigate and focuses on 
+> Welcome to "Favorite Dance App". Here, as a user, you can log in to build a list of favorite dance studios and classes. "Favorite Dance App" is easy to navigate and focuses on 
 
 
 ## Views of Favorite Dance App
