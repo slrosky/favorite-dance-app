@@ -6,69 +6,8 @@ body {
   grid-template-columns: 1fr;
 }
 
-.landing {
-  background-image: url(https://i.imgur.com/rPyFxGn.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.studiosAll {
-  background-image: url(https://i.imgur.com/zRT7mJj.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-nav {
-  display: grid;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  padding: 10px 20px;
-  border-radius: 4px;
+nav a {
   text-decoration: none;
-}
-
-nav a{
-  text-decoration: none;
-}
-
-#homepage a {
-  background: #BDBDBD;
-  color: white;
-  display: flex;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  grid-template-columns: 6fr;
-}
-
-#favorites {
-  background: Black;
-  display: flex;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  grid-template-columns: 6fr;
-  align-content: space-between;
-}
-
-#favorites a{
-  color: white;
-}
-
-#login a {
-  background: #585858;
-  color: white;
-  display: grid;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  float: right;
 }
 
 h1 {
@@ -80,7 +19,8 @@ h2 {
   text-align: center;
 }
 
-h3, .main-browse {
+h3,
+.main-browse {
   background: rgb(0, 0, 0, 0.8);
   color: white;
   display: grid;
@@ -90,7 +30,7 @@ h3, .main-browse {
 }
 
 .loud {
-  background: #FCD10D;
+  background: #fcd10d;
 }
 
 .main-browse a {
@@ -98,12 +38,12 @@ h3, .main-browse {
 }
 
 .fave {
-max-width: 20px;
-display: inline-flex;
+  max-width: 20px;
+  display: inline-flex;
 }
 
 div img {
-max-width: 200px;
+  max-width: 200px;
 }
 
 /* section {
