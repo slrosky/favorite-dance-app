@@ -35,6 +35,7 @@ _Welcome to "Favorite Dance App". Here, as a user, you can log in to build a lis
 - Javascript
 - CSS
 - HTML
+- Mongoose
 
 ## Getting Started:
 #### Link to heroku deployed app [here](https://favorite-dance-app.herokuapp.com/)

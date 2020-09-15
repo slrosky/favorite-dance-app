@@ -52,7 +52,6 @@ function addFavoriteStudio(req, res) {
 }
 
 function addFavoriteClass(req, res) {
-  console.log('hitting');
   Class.findById(req.params.id, function(err, danceclass) {
     Dancer.findById(req.user._id, function(err, dancer) {
       dancer.favoriteClasses.push(danceclass);
@@ -64,7 +63,6 @@ function addFavoriteClass(req, res) {
 }
 
 function update(req, res) {
-  console.log('this is req.body.content', req.body.content)
   Dancer.findById(req.params.id, function(err, user) {
     user.bio = req.body.content;
     user.save ((err) => {

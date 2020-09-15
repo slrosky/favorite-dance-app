@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <title><%= title %></title>
-</head>
-<body class="landing">
+  </head>
+  <body class="landing">
     <nav>
-    <div id="homepage">
+      <div id="homepage">
         <a href="/">Homepage</a>
-    </div>
-    <div id="favorites">
-            <img src="https://i.imgur.com/h6EHJ1n.png" class="fave">
-            <a href="/favorites">Favorites</a>
-    </div>
-    <div id="login" id="logout">
+      </div>
+      <div id="favorites">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-heart-fill"
+          fill="red"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+          />
+        </svg>
+        <a href="/favorites">Favorites</a>
+      </div>
+      <div id="login" id="logout">
         <% if (user) { %>
-            <a href="/logout">Log Out</a>
-          <% } else { %>
-            <a href="/auth/google">Login with Google</a>
-          <% } %>
-    </div>
-</nav>
+        <a href="/logout">Log Out</a>
+        <% } else { %>
+        <a href="/auth/google">Login with Google</a>
+        <% } %>
+      </div>
+    </nav>
+  </body>
+</html>
