@@ -2,11 +2,15 @@
 
     <h3>STUDIOS</h3>
     <section>
-
-        <% studios.forEach(function(s) { %>  
-            <div><img src=<%= s.image %>></div>
-            <div><%= s.name %></div>
-            <div><a href="/studios/<%= s._id %>">STUDIO DETAILS</a></div>
+    <div class="container">
+        <div class="row row-cols-4">
+            <% studios.forEach(function(s) { %>  
+                <div class="col">
+                <img src=<%= s.image %>><br>
+                <%= s.name %>
+                <br>
+                <a href="/studios/<%= s._id %>">STUDIO DETAILS</a>
+                </div>
         <% }); %>
 </section> 
 <br>
