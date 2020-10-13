@@ -1,15 +1,20 @@
 <%- include('../partials/header') %>
 
 <h3>CLASSES</h3>
-    <section>
-        <% classes.forEach(function(c) { %>  
-            <div><%= c.title %></div>
-            <div><%= c.day %>, <%= c.time %> || <%= c.duration %></div>
-            <div>Level: <%= c.level %> || Style: <%= c.style %></div>
-            <div><%= c.description %></div>
-            <div><%= c.title %></div>
-            <div><a href="/classes/<%= c._id %>">CLASS DETAILS</a></div>
-        <% }); %>
-    </section> 
+<section>
+    <div class="container">
+        <div class="row row-cols-4">
+            <% classes.forEach(function(c) { %>
+            <div>
+                <p><%= c.title %></p>
+                <p><%= c.day %>, <%= c.time %> || <%= c.duration %></p>
+                <p>Level: <%= c.level %> || Style: <%= c.style %></p>
+                <p><%= c.description %></p>
+                <p><a href="/classes/<%= c._id %>">CLASS DETAILS</a></p>
+            </div>
+            <% }); %>
+        </div>
+    </div>
+</section>
 
-    <%- include('../partials/footer') %>
+<%- include('../partials/footer') %>
